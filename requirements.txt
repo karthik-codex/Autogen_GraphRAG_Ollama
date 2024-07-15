@@ -1,0 +1,7 @@
+'litellm[proxy]'
+ollama
+pyautogen "pyautogen[retrievechat]" 
+graphrag
+tiktoken
+chainlit
+marker-pdf
