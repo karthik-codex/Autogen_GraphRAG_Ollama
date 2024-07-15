@@ -1,4 +1,3 @@
-'litellm[proxy]'
 ollama
 pyautogen "pyautogen[retrievechat]" 
 graphrag
