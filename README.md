@@ -36,7 +36,7 @@ Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chai
     ```bash
     conda create -n RAG_agents python=3.12
     conda activate RAG_agents
-    pip install 'litellm[proxy]
+    pip install 'litellm[proxy]'
     pip install -r requirements.txt
     ```    
 3. **Initiate GraphRAG root folder:**
