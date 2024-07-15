@@ -1,4 +1,6 @@
-# Multi-Agent AI Superbot using AutoGen and GraphRAG
+# Multi-Agent AI Superbot using AutoGen, GraphRAG and Ollama
+
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/karthik-codex/autogen_graphRAG/blob/main/images/U2.webp?raw=true)
 
 This application integrates GraphRAG with AutoGen agents, powered by local LLMs from Ollama, for free and offline embedding and inference. Key highlights include:
  - **Agentic-RAG:** - Integrating GraphRAG's knowledge search method with an AutoGen agent via function calling.
