@@ -1,4 +1,4 @@
-# Multi-Agent AI Superbot using AutoGen, GraphRAG, Ollama and Chainlit UI
+# Local Multi-Agent AI Superbot using AutoGen, GraphRAG, Ollama and Chainlit UI
 
 ![Graphical Abstract](https://github.com/karthik-codex/autogen_graphRAG/blob/main/images/1721017707759.jpg?raw=true)
 
