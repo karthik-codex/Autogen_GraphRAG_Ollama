@@ -1,17 +1,10 @@
 import autogen
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
+from rich import print
 import chainlit as cl
 from typing_extensions import Annotated
 from chainlit.input_widget import (
-   Select, Slider, Switch, 
-   TextInput, NumberInput)
-import requests
-from bs4 import BeautifulSoup
-from rich import print
+   Select, Slider, Switch)
 from autogen import AssistantAgent, UserProxyAgent
-from utils.llm_config import *
 from utils.chainlit_agents import ChainlitUserProxyAgent, ChainlitAssistantAgent
 from graphrag.query.cli import run_global_search, run_local_search
 
@@ -107,18 +100,17 @@ async def setup_agent(settings):
 @cl.on_message
 async def run_conversation(message: cl.Message):
     print("Running conversation")
+    INPUT_DIR = None
+    ROOT_DIR = '.'    
     CONTEXT = message.content
-    MAX_ITER = 10
-    retriever   = cl.user_session.get("Retriever")
-    user_proxy  = cl.user_session.get("Query Agent")   
+    MAX_ITER = 10   
     RESPONSE_TYPE = cl.user_session.get("Gen_type")
     COMMUNITY = cl.user_session.get("Community")
     LOCAL_SEARCH = cl.user_session.get("Search_type")
-    print("Setting groupchat")
-    print(LOCAL_SEARCH)
 
-    INPUT_DIR = None
-    ROOT_DIR = '.'
+    retriever   = cl.user_session.get("Retriever")
+    user_proxy  = cl.user_session.get("Query Agent")
+    print("Setting groupchat")
 
     def state_transition(last_speaker, groupchat):
         messages = groupchat.messages
