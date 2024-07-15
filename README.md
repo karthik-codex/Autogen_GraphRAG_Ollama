@@ -1,6 +1,6 @@
 # Multi-Agent AI Superbot using AutoGen, GraphRAG and Ollama
 
-![alt text](https://github.com/karthik-codex/autogen_graphRAG/blob/main/images/U2.webp?raw=true)
+![Graphical Abstract](https://github.com/karthik-codex/autogen_graphRAG/blob/main/images/flowchart.webp?raw=true)
 
 This application integrates GraphRAG with AutoGen agents, powered by local LLMs from Ollama, for free and offline embedding and inference. Key highlights include:
  - **Agentic-RAG:** - Integrating GraphRAG's knowledge search method with an AutoGen agent via function calling.
@@ -9,6 +9,9 @@ This application integrates GraphRAG with AutoGen agents, powered by local LLMs 
  - **Non-OpenAI Function Calling:** - Extending AutoGen to support function calling with non-OpenAI LLMs from Ollama via Lite-LLM proxy
 server.
  - **Interactive UI:** - Deploying Chainlit UI to handle continuous conversations, multi-threading, and user input settings.
+
+![Main Interfacce](https://github.com/karthik-codex/autogen_graphRAG/blob/main/images/UI1.webp?raw=true)
+![Widget Settings](https://github.com/karthik-codex/autogen_graphRAG/blob/main/images/U2.webp?raw=true)
 
 ## Useful Links 🔗
 
