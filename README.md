@@ -34,9 +34,11 @@ Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chai
 
 2. **Create conda environment and install packages:**
     ```bash
-    conda create -n RAG_agents python=3.12
-    conda activate RAG_agents
-    pip install -r requirements.txt
+   conda create -n RAG_agents python=3.12
+   conda activate RAG_agents
+   git clone https://github.com/karthik-codex/autogen_graphRAG.git
+   cd autogen_graphRAG
+   pip install -r requirements.txt
     ```    
 3. **Initiate GraphRAG root folder:**
     ```bash
