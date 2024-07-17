@@ -1,6 +1,6 @@
 litellm[proxy]
 ollama
-pyautogen "pyautogen[retrievechat]" 
+pyautogen[retrievechat]
 graphrag
 tiktoken
 chainlit
