@@ -5,3 +5,4 @@ tiktoken
 chainlit
 graphrag
 marker-pdf
+torch
