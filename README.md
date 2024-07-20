@@ -17,7 +17,7 @@ server.
 
 - **Full Guide:** Microsoft's GraphRAG + AutoGen + Ollama + Chainlit = Fully Local & Free Multi-Agent RAG Superbot [Medium.com](https://medium.com/@karthik.codex/microsofts-graphrag-autogen-ollama-chainlit-fully-local-free-multi-agent-rag-superbot-61ad3759f06f) 📚
 
-## 📦 Installation and Setup
+## 📦 Installation and Setup Linux
 
 Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chainlit UI:
 
@@ -61,5 +61,52 @@ Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chai
     ```    
 7. **Run app:**
     ```bash
+    chainlit run appUI.py
+    ```                
+
+## 📦 Installation and Setup Windows
+
+Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chainlit UI on Windows:
+
+1. **Install LLMs:**
+
+    Visit [Ollama's website](https://ollama.com/) for installation files.
+
+    ```pwsh
+    ollama pull mistral
+    ollama pull nomic-embed-text
+    ollama pull llama3
+    ollama serve
+    ```
+
+2. **Create conda environment and install packages:**
+    ```pwsh
+    git clone https://github.com/karthik-codex/autogen_graphRAG.git
+    cd autogen_graphRAG
+    python -m venv venv
+    ./venv/Scripts/activate
+    pip install -r requirements.txt
+    ```    
+3. **Initiate GraphRAG root folder:**
+    ```pwsh
+    mkdir input
+    python -m graphrag.index --init  --root .
+    cp ./utils/settings.yaml ./
+    ```      
+4. **Replace 'embedding.py' and 'openai_embeddings_llm.py' in the GraphRAG package folder using files from Utils folder:**
+    ```pwsh
+    cp ./utils/openai_embeddings_llm.py .\venv\Lib\site-packages\graphrag\llm\openai\openai_embeddings_llm.py
+    cp ./utils/embedding.py .\venv\Lib\site-packages\graphrag\query\llm\oai\embedding.py 
+    ```      
+5. **Create embeddings and knowledge graph:**
+    ```pwsh
+    python -m graphrag.index --root .
+    ```         
+6. **Start Lite-LLM proxy server:**
+    ```pwsh
+    litellm --model ollama_chat/llama3
+    ```    
+7. **Run app:**
+    ```pwsh
     chainlit run appUI.py
     ```                
