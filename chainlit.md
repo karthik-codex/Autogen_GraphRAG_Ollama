@@ -1,4 +1,4 @@
-# Multi-Agent AI Superbot using AutoGen and GraphRAG
+# Multi-Agent AI Superbot using AG2 and GraphRAG
 
 This application integrates GraphRAG with AutoGen agents, powered by local LLMs from Ollama, for free and offline embedding and inference. Key highlights include:
  - **Agentic-RAG:** - Integrating GraphRAG's knowledge search method with an AutoGen agent via function calling.
@@ -10,4 +10,4 @@ server.
 
 ## Useful Links 🔗
 
-- **Medium Article:** Microsoft's GraphRAG + AutoGen + Ollama + Chainlit = Fully Local & Free Multi-Agent RAG Superbot [Medium.com](https://medium.com/@karthik.codex/microsofts-graphrag-autogen-ollama-chainlit-fully-local-free-multi-agent-rag-superbot-61ad3759f06f) 📚
+- **Medium Article:** Microsoft's GraphRAG + AG2 (Formerly AutoGen) + Ollama + Chainlit = Fully Local & Free Multi-Agent RAG Superbot [Medium.com](https://medium.com/@karthik.codex/microsofts-graphrag-autogen-ollama-chainlit-fully-local-free-multi-agent-rag-superbot-61ad3759f06f) 📚

@@ -15,11 +15,11 @@ server.
 
 ## Useful Links 🔗
 
-- **Full Guide:** Microsoft's GraphRAG + AutoGen + Ollama + Chainlit = Fully Local & Free Multi-Agent RAG Superbot [Medium.com](https://medium.com/@karthik.codex/microsofts-graphrag-autogen-ollama-chainlit-fully-local-free-multi-agent-rag-superbot-61ad3759f06f) 📚
+- **Full Guide:** Microsoft's GraphRAG + AG2 (Formerly AutoGen) + Ollama + Chainlit = Fully Local & Free Multi-Agent RAG Superbot [Medium.com](https://medium.com/@karthik.codex/microsofts-graphrag-autogen-ollama-chainlit-fully-local-free-multi-agent-rag-superbot-61ad3759f06f) 📚
 
 ## 📦 Installation and Setup Linux
 
-Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chainlit UI:
+Follow these steps to set up and run AG2 GraphRAG Local with Ollama and Chainlit UI:
 
 1. **Install LLMs:**
 
@@ -66,7 +66,7 @@ Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chai
 
 ## 📦 Installation and Setup Windows
 
-Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chainlit UI on Windows:
+Follow these steps to set up and run AG2's GraphRAG Local with Ollama and Chainlit UI on Windows:
 
 1. **Install LLMs:**
 
